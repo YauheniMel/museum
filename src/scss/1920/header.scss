@@ -1,0 +1,50 @@
+.header {
+  background-color: black;
+  height: 150px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  line-height: 150px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    flex: 1;
+    max-width: 775px;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__link {
+    text-align: right;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Roboto200";
+    letter-spacing: 2px;
+    font-size: 22px;
+    display: block;
+
+    &:hover {
+      animation: changeColor 0.4s;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  &__logo {
+    background: url("@../../assets/icons/logo.svg") no-repeat;
+    background-position-y: 58px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Forum-light";
+    font-weight: 400;
+    text-align: right;
+    width: 200px;
+    font-size: 31px;
+    letter-spacing: 4px;
+  }
+}

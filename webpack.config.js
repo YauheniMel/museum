@@ -16,10 +16,6 @@ module.exports = {
       template: './src/index.html',
       filename: './index.html',
     }),
-    new HTMLWebpackPlugin({
-      template: './src/tour7.html',
-      filename: './tour7.html',
-    }),
     new CleanWebpackPlugin(),
   ],
   module: {

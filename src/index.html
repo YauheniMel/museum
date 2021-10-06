@@ -8,23 +8,114 @@
   <title>Document</title>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-      <div class="header__container container">
-        <nav class="header__nav nav">
-          <h3 class="nav__logo">Louvre</h3>
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#visiting" class="nav__link">Visiting</a></li>
-            <li class="nav__item"><a href="#explore" class="nav__link">Explore</a></li>
-            <li class="nav__item"><a href="#video" class="nav__link">Video</a></li>
-            <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
-            <li class="nav__item"><a href="#tickets" class="nav__link">Tickets</a></li>
-            <li class="nav__item"><a href="#contacts" class="nav__link">Contacts</a></li>
-          </ul>
-        </nav>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__container container">
+      <nav class="header__nav nav">
+        <h3 class="nav__logo">Louvre</h3>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#visiting" class="nav__link">Visiting</a></li>
+          <li class="nav__item"><a href="#explore" class="nav__link">Explore</a></li>
+          <li class="nav__item"><a href="#video" class="nav__link">Video</a></li>
+          <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
+          <li class="nav__item"><a href="#tickets" class="nav__link">Tickets</a></li>
+          <li class="nav__item"><a href="#contacts" class="nav__link">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Main -->
+  <main class="main">
+    <section class="main__section-welcome welcome" id="welcome">
+      <div class="welcome__container container">
+        <div class="welcome__content">
+          <h2 class="welcome__title">
+            Welcome<br>to the Louvre
+          </h2>
+          <p class="welcome__discription">
+            From the castle to the museum
+          </p>
+          <a class="welcome__link" target="tour1" href="./tour1.html">Discover the Louvre</a>
+        </div>
+        <div class="welcome__carousel">
+          <img src="./assets/images/welcome_background.jpg" alt="mona lisa">
+        </div>
       </div>
-    </header>
+    </section>
+    <section class="main__section-visiting visiting" id="visiting">
+      <div class="container">
+        <div class="visiting__title-wrap">
+          <h2 class="visiting__title">Virtual tour</h2>
+        </div>
+        <div class="visiting__card-wrap">
+          <a target="tour2" href="./tour2.html">
+            <div class="visiting__card card card-royalpalace">
+              <img height="285" width="440" src="./assets/images/royal_palace.jpg" alt="royal palace"
+                class="card__image">
+              <div class="card__discription">
+                <h3 class="card__title">Royal Palace</h3>
+                <p class="card__introduction">360* Virtual Tour</p>
+                <p class="card__introduction">Google Street Panorama View</p>
+              </div>
+            </div>
+          </a>
+          <a target="tour3" href="./tour3.html">
+            <div class="visiting__card card card-dennonwing">
+              <img height="285" width="440" src="./assets/images/denon_wing.jpg" alt="dennon wing" class="card__image">
+              <div class="card__discription">
+                <h3 class="card__title">Denon Wing</h3>
+                <p class="card__introduction">360* Virtual Tour</p>
+                <p class="card__introduction">Google Street Panorama View</p>
+              </div>
+            </div>
+          </a>
+          <a target="tour4" href="./tour4.html">
+            <div class="visiting__card card card-colonnadeperrault">
+              <img height="285" width="440" src="./assets/images/collonade_perrault.jpg" alt="colonnade perrault"
+                class="card__image">
+              <div class="card__discription">
+                <h3 class="card__title">Colonnade Perrault</h3>
+                <p class="card__introduction">360* Virtual Tour</p>
+                <p class="card__introduction">Google Street Panorama View</p>
+              </div>
+            </div>
+          </a>
+          <a target="tour5" href="./tour5.html">
+            <div class="visiting__card card card-greekhall">
+              <img height="285" width="440" src="./assets/images/greek_hall.jpg" alt="greek hall" class="card__image">
+              <div class="card__discription">
+                <h3 class="card__title">Greek Hall</h3>
+                <p class="card__introduction">360* Virtual Tour</p>
+                <p class="card__introduction">Google Street Panorama View</p>
+              </div>
+            </div>
+          </a>
+          <a target="tour6" href="./tour6.html">
+            <div class="visiting__card card card-monalisa">
+              <img height="285" width="440" src="./assets/images/monna_lisa.jpg" alt="mona lisa" class="card__image">
+              <div class="card__discription">
+                <h3 class="card__title">Mona Lisa</h3>
+                <p class="card__introduction">360* Virtual Tour</p>
+                <p class="card__introduction">Google Street Panorama View</p>
+              </div>
+            </div>
+          </a>
+          <a target="tour7" href="./tour7.html">
+            <div class="visiting__card card card-nightpalace">
+              <img height="285" width="440" src="./assets/images/night_palace.jpg" alt="night palace"
+                class="card__image">
+              <div class="card__discription">
+                <h3 class="card__title">Night Palace</h3>
+                <p class="card__introduction">360* Virtual Tour</p>
+                <p class="card__introduction">Google Street Panorama View</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <script src="./index.js"></script>
+  <script src="./index.js"></script>
 </body>
 </html>

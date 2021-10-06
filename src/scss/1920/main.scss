@@ -1,0 +1,149 @@
+.main {
+  background-color: black;
+}
+
+.welcome {
+  &__container {
+    position: relative;
+    height: 810px;
+  }
+
+  &__content {
+    position: absolute;
+    left: 0;
+    top: 150px;
+    z-index: 1;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    color: #ffffff;
+  }
+
+  &__discription {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    color: #ffffff;
+  }
+
+  &__link {
+    cursor: pointer;
+    width: 360px;
+    display: inline-block;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-top: 75px;
+    color: lightgray;
+    border: none;
+    border-radius: 10px;
+    background-color: #710707;
+
+    &:hover {
+      animation: waveEffect 0.2s linear;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  &__carousel {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.visiting {
+  background-color: #ffffff;
+  padding: 75px 0;
+
+
+  &__card-wrap {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "royalpalace dennonwing colonnadeperrault"
+      "greekhall monalisa nightpalace";
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__title-wrap {
+    border-bottom: 3px solid #710707;
+    grid-area: header;
+  }
+
+  &__title {
+    color: #9d8665;
+    font-size: 80px;
+    padding-bottom: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+}
+
+.card-royalpalace {
+  grid-area: royalpalace;
+}
+
+.card-dennonwing {
+  grid-area: dennonwing;
+}
+
+.card-colonnadeperrault {
+  grid-area: colonnadeperrault;
+}
+
+.card-greekhall {
+  grid-area: greekhall;
+}
+
+.card-monalisa {
+  grid-area: monalisa;
+}
+
+.card-nightpalace {
+  grid-area: nightpalace;
+}
+
+.card {
+  padding-top: 75px;
+
+  &__discription {
+    margin-top: 25px;
+    color: #000000;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    font-size: 32px;
+    letter-spacing: 5px;
+  }
+
+  &__introduction {
+    font-size: 22px;
+    line-height: 25.8px;
+    width: 300px;
+    padding-top: 10px;
+    transition: width 0.2s linear;
+  }
+
+  &__introduction:first-of-type {
+    border-top: 2px solid #710707;
+  }
+
+  &:hover &__introduction {
+    width: 440px;
+  }
+}

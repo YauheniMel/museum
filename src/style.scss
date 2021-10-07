@@ -1,6 +1,7 @@
 @import './scss/1920/header.scss';
 @import './scss/1920/main.scss';
 @import './scss/1920/booking.scss';
+@import './scss/1920/footer.scss';
 
 * {
   margin: 0;
@@ -8,11 +9,16 @@
   box-sizing: border-box;
 }
 
-.container {
-  margin: auto;
-  max-width: 1440px;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.container {
+  margin: auto;
+  max-width: 1440px;
+}
+

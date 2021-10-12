@@ -1,0 +1,134 @@
+@import "../animations.scss";
+
+.footer {
+  background-color: black;
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    margin-top: 75px;
+    background: url("@../../assets/icons/logo.svg") no-repeat;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Forum-light";
+    font-weight: 400;
+    text-align: right;
+    width: 200px;
+    font-size: 31px;
+    letter-spacing: 4px;
+  }
+
+  &__list-contacts {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    column-gap: 25px;
+    margin-bottom: 50px;
+    list-style: none;
+  }
+  &__item-contacts {
+
+  }
+  &__link-contacts {
+    color: white;
+    border-radius: 50%;
+    border: 1px solid #666666;
+    display: inline-block;
+
+    &:hover {
+      animation: changeBorder 0.5s;
+      animation-fill-mode: forwards;
+      border: 1px solid gold;
+    }
+  }
+
+  .icon-youtube {
+    background-image: url("@../../assets/icons/youtube.svg");
+  }
+
+  .icon-instagram {
+    background-image: url("@../../assets/icons/instagram.svg");
+  }
+
+  .icon-facebook {
+    background-image: url("@../../assets/icons/facebook.svg");
+  }
+
+  .icon-twitter {
+    background-image: url("@../../assets/icons/twitter.svg");
+  }
+
+  .icon-pinter {
+    background-image: url("@../../assets/icons/pinterest.svg");
+  }
+
+  &__icon-contacts {
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 48px 48px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+
+    &:hover {
+      background-color: #666666;
+    }
+  }
+
+  &__info {
+    border-top: 3px solid #666666;
+  }
+
+  &__info-container {
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    font-family: 'Roboto200';
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 2px;
+  }
+
+  &__info-rss {
+    padding-left: 25px;
+  }
+}
+
+.footer-nav {
+  flex: 2;
+  margin-left: 145px;
+  margin-top: 87px;
+  padding-bottom: 25px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    column-gap: 150px;
+    width: 350px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  &__item {
+    margin-bottom: 25px;
+  }
+
+  &__link {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Roboto200";
+    letter-spacing: 2px;
+    font-size: 22px;
+
+    &:hover {
+      animation: changeColor 0.4s;
+      animation-fill-mode: forwards;
+    }
+  }
+}

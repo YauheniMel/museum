@@ -17,6 +17,30 @@ module.exports = {
       filename: './index.html',
     }),
     new HTMLWebpackPlugin({
+      template: './src/tour1.html',
+      filename: './tour1.html',
+    }),
+    new HTMLWebpackPlugin({
+      template: './src/tour2.html',
+      filename: './tour2.html',
+    }),
+    new HTMLWebpackPlugin({
+      template: './src/tour3.html',
+      filename: './tour3.html',
+    }),
+    new HTMLWebpackPlugin({
+      template: './src/tour4.html',
+      filename: './tour4.html',
+    }),
+    new HTMLWebpackPlugin({
+      template: './src/tour5.html',
+      filename: './tour5.html',
+    }),
+    new HTMLWebpackPlugin({
+      template: './src/tour6.html',
+      filename: './tour6.html',
+    }),
+    new HTMLWebpackPlugin({
       template: './src/tour7.html',
       filename: './tour7.html',
     }),

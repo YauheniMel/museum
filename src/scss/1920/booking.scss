@@ -1,0 +1,314 @@
+.booking {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba($color: #ffffff, $alpha: 0.5);
+
+  &__container {
+    max-width: 970px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 91px 0;
+  }
+
+  &__column-overview {
+    width: 530px;
+    padding: 21px 44px 30px 16px;
+    border: 1px solid #030303;
+  }
+
+  &:hover {
+    animation: hidden 2s linear;
+  }
+}
+
+.column-form {
+  width: 400px;
+
+  &__head {
+    background-image: url("@../../assets/icons/logo.svg");
+    background-repeat: no-repeat;
+  }
+  &__title {
+    font-family: "Forum-light";
+    font-size: 50px;
+    line-height: 55px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #9d8665;
+  }
+  &__discription {
+    color: #710707;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    border-bottom: 3px solid rgba($color: #740c11, $alpha: 0.9);
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    margin-top: 60px;
+
+    input,
+    select {
+      height: 45px;
+    }
+  }
+
+  &__date {
+    width: 190px;
+  }
+
+  &__time {
+    width: 190px;
+  }
+
+  .column-form__name {
+    width: 400px;
+  }
+  .column-form__email {
+    width: 400px;
+  }
+  .column-form__phone {
+    width: 400px;
+  }
+  .column-form__type {
+    width: 400px;
+  }
+
+  .column-form__counter-wrap {
+    padding: 15px;
+    border: 1px solid #030303;
+  }
+  .column-form__counter-title {
+    font-family: "Forum-light";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba($color: #740c11, $alpha: 0.9);
+  }
+  .column-form__counter-basic {
+    position: relative;
+
+    display: inline-block;
+    width: 370px;
+    margin: 15px 0 18px 0;
+    line-height: 25px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    input {
+      width: 105px;
+      height: 25px;
+      position: absolute;
+      right: 0;
+    }
+  }
+  .column-form__counter-senior {
+    position: relative;
+    display: inline-block;
+    width: 370px;
+    line-height: 25px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    input {
+      width: 105px;
+      height: 25px;
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+
+.overview {
+  padding: 15px 30px;
+}
+
+.overview__discription-title {
+  color: #272727;
+  font-family: "Roboto";
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38px;
+}
+.overview__discription-type {
+  color: #740c11;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+}
+.overview__discription-date {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+}
+.overview__discription-time {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+}
+.overview__discription-duration {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.overview__total {
+  margin: 22px 0 10px 0;
+}
+.overview__total-item {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #030303;
+}
+
+.overview__total-result {
+  border-top: 2px solid #740c11;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37, 5px;
+}
+
+.discription-form {
+  position: relative;
+  height: 295px;
+}
+.discription-form__card-front {
+  position: absolute;
+  left: -15px;
+  width: 360px;
+  background-color: #bcbcbc;
+  height: 211px;
+  padding: 15px 20px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  z-index: 1;
+
+  input {
+    height: 35px;
+  }
+}
+.discription-form__number {
+  display: block;
+  margin-bottom: 5px;
+
+  & + input {
+    width: 215px;
+    display: inline-block;
+  }
+}
+.discription-form__mounth {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+  & + input {
+    width: 100px;
+  }
+}
+.discription-form__year {
+  & + input {
+    width: 100px;
+    margin-left: 12px;
+  }
+}
+.discription-form__name {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+  & + input {
+    width: 320px;
+  }
+}
+.discription-form__card-back {
+  position: absolute;
+  top: 13px;
+  left: 110px;
+  top: 10px;
+  width: 360px;
+  height: 211px;
+  background-color: #939393;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px 20px;
+
+  label {
+    text-align: center;
+  }
+
+  input {
+    height: 35px;
+    width: 75px;
+    margin: 5px 0 6px 0;
+  }
+}
+
+.card-back__content {
+  align-self: flex-end;
+  justify-items: end;
+}
+
+.discription-form__cod {
+  text-transform: uppercase;
+  display: block;
+}
+.discription-form__remark {
+  width: 55px;
+  margin-left: 10px;
+}
+.discription-form__button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 220px;
+  border: none;
+  height: 45px;
+  margin-top: 26px;
+  background-color: #710707;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: white;
+}
+
+@keyframes hidden {
+  0% {
+    left: 100%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}

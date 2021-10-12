@@ -1,0 +1,181 @@
+@keyframes waveEffect {
+  0% {
+    background-image: linear-gradient(
+      to right top,
+      #b59d7c,
+      #b18f6d,
+      #b07551,
+      #a95940,
+      #a54444,
+      #982f2f,
+      #821d1d,
+      #851010,
+      #710707,
+      #620404
+    );
+  }
+
+  10% {
+    background-image: linear-gradient(
+      to right top,
+      #b18f6d,
+      #b59d7c,
+      #b07551,
+      #a95940,
+      #a54444,
+      #982f2f,
+      #821d1d,
+      #851010,
+      #710707,
+      #620404
+    );
+  }
+
+  20% {
+    background-image: linear-gradient(
+      to right top,
+      #b07551,
+      #b18f6d,
+      #b59d7c,
+      #a95940,
+      #a54444,
+      #982f2f,
+      #821d1d,
+      #851010,
+      #710707,
+      #620404
+    );
+  }
+
+  30% {
+    background-image: linear-gradient(
+      to right top,
+      #a95940,
+      #b07551,
+      #b18f6d,
+      #b59d7c,
+      #a54444,
+      #982f2f,
+      #821d1d,
+      #851010,
+      #710707,
+      #620404
+    );
+  }
+
+  40% {
+    background-image: linear-gradient(
+      to right top,
+      #a54444,
+      #a95940,
+      #b07551,
+      #b18f6d,
+      #b59d7c,
+      #982f2f,
+      #821d1d,
+      #851010,
+      #710707,
+      #620404
+    );
+  }
+
+  50% {
+    background-image: linear-gradient(
+      to right top,
+      #982f2f,
+      #a54444,
+      #a95940,
+      #b07551,
+      #b18f6d,
+      #b59d7c,
+      #821d1d,
+      #851010,
+      #710707,
+      #620404
+    );
+  }
+
+  60% {
+    background-image: linear-gradient(
+      to right top,
+      #821d1d,
+      #982f2f,
+      #a54444,
+      #a95940,
+      #b07551,
+      #b18f6d,
+      #b59d7c,
+      #851010,
+      #710707,
+      #620404
+    );
+  }
+
+  70% {
+    background-image: linear-gradient(
+      to right top,
+      #851010,
+      #821d1d,
+      #982f2f,
+      #a54444,
+      #a95940,
+      #b07551,
+      #b18f6d,
+      #b59d7c,
+      #710707,
+      #620404
+    );
+  }
+
+  80% {
+    background-image: linear-gradient(
+      to right top,
+      #710707,
+      #851010,
+      #821d1d,
+      #982f2f,
+      #a54444,
+      #a95940,
+      #b07551,
+      #b18f6d,
+      #b59d7c,
+      #620404
+    );
+  }
+
+  90% {
+    background-image: linear-gradient(
+      to right top,
+      #620404,
+      #710707,
+      #851010,
+      #821d1d,
+      #982f2f,
+      #a54444,
+      #a95940,
+      #b07551,
+      #b18f6d,
+      #b59d7c
+    );
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    color: #ffffff;
+  }
+
+  100% {
+    color: gray;
+  }
+}
+
+@keyframes changeBorder {
+  0% {
+    color: #ffffff;
+  }
+
+  100% {
+    color: gold;
+  }
+}

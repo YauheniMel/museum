@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "museum-project",
   "main": "index.js",
+  "engines": {
+    "node": "<= 15.0.0",
+    "npm": "<= 5.0.0"
+  },
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
